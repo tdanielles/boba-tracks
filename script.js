@@ -91,8 +91,10 @@ function getTotalCalories(e) {
     caloriesTwo = 75;
   } else if(toppingChoice=="strawberrypopping") {
     caloriesTwo = 85;
-  } else {
+  } else if(toppingChoice=="pudding") {
     caloriesTwo = 212;
+  } else {
+    caloriesTwo = 0;
   }
 
   var caloriesThree;
@@ -102,8 +104,10 @@ function getTotalCalories(e) {
     caloriesThree = 94.5;
   } else if(sugarLevels=="fifty") {
     caloriesThree = 67.5;
-  } else {
+  } else if(sugarLevels=="thirty") {
     caloriesThree = 40.5;
+  } else {
+    caloriesThree = 0;
   }
 
   totalCalories = caloriesOne + caloriesTwo + caloriesThree;
