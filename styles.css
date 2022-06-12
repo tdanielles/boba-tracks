@@ -1,0 +1,219 @@
+.main {
+    margin-top: 5px;
+    text-align: center;
+    padding: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 20px 30px;
+    border-radius: 30px;
+    transition: filter 0.15s ease-in-out;
+}
+
+.btn-make {
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #ad6a34;
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+button, input {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    filter: brightness(90%);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(253, 214, 214);
+}
+
+ul {
+    width: 300px;
+}
+
+/* FORM */
+.form-container {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 20px;
+    border-radius: 40px;
+    background-color: #bc9371;
+    color: white;
+    text-align: left;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.2s ease-in-out;
+}
+
+.form-container.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.box {
+    width: 250px;
+}
+
+.make-bbt-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.make-bbt-form button {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.btn-light-green {
+    background-color: #abd9a9;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.overlay.active {
+    display: block;
+}
+
+input[type="radio"] {
+    appearance: none;
+    background-color: blanchedalmond;
+    margin: 0;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #755b46;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+    background-color: #755b46;
+}
+
+/* LIMIT EXCEEDED DIV */
+.limit-exceeded {
+    position: fixed;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 30px;
+    border-radius: 40px;
+    background-color: #e68a89;
+    color: white;
+    text-align: center;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.2s ease-in-out;
+}
+
+.limit-exceeded.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.limit-exceeded .btn {
+    margin: 10px;
+    width: 200px;
+    font-size: 18px;
+}
+
+.text-content {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.number {
+    color: rgb(254, 255, 203);
+}
+
+/* ENJOY BBT */
+.enjoy {
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 30px;
+    border-radius: 40px;
+    background-color: #fff8eb;
+    color:#755b46;
+    text-align: center;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.2s ease-in-out;
+}
+
+.enjoy.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.enjoy .text-content {
+    font-size: 20px;
+}
+
+.enjoy img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: rosybrown;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: -10px;
+    text-align: left;
+    background-color: blanchedalmond;
+    border-collapse: collapse;
+    margin-top: 0;
+    padding: 15px 30px;
+    transition: all 150ms ease-in-out;
+}
+
+.navbar {
+    text-align: left;
+    font-size: 25px;
+    color:#755b46;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 40px;
+    text-align: center;
+    font-weight: bolder;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>bobaTracks</title>
+</head>
+
+<body>
+  <div class="header">
+    <div style="float: left;width: 250px;height: 100px; vertical-align: middle;;">
+      <h1 style="float: left;max-width: 10px;padding-top: 17px;">
+        bobaTracks
+      </h1>
+      <div style="float: right;">
+        <img src="https://media2.giphy.com/media/WUHpQuDqAwD1Y767I5/source.gif" width="100"
+          style="display: inline;position: relative;" />
+      </div>
+    </div>  
+  </div>
+
+  <main class="main container">
+    <button class="btn btn-make" id="makeBbtBtn">Make my bubble tea</button>
+    <div class="navbar center" style="background-color: blanchedalmond; border-radius: 30px;" id="calories">
+      <p id="averageCalories">Average Calories: 610 cal.</p>
+      <p id="totalCalories">Total Calories: 0 cal.</p>
+      <p id="explanation"></p>
+    </div> 
+  </main>
+
+  <div class="form-container" id="formContainer">
+    <form class="make-bbt-form" id="makeBbtForm">
+        <h2>Your bubble tea order</h3>
+        <div class="box">
+          <h4>Flavour Options</h1>
+          <div>
+            <input type="radio" name="flavourOptions" id="pearl" value="pearl" checked>
+            <label for="pearl">Pearl Milk Tea</label>
+          </div>
+          <div>
+            <input type="radio" name="flavourOptions" id="regular" value="regular">
+            <label for="regular">Regular Milk Tea</label>
+          </div>
+          <div>
+            <input type="radio" name="flavourOptions" id="brownSugar" value="brownsugar">
+            <label for="brownSugar">Brown Sugar Latte</label>
+          </div>
+          <div>
+            <input type="radio" name="flavourOptions" id="mango" value="mango">
+            <label for="mango">Mango Green Tea</label>
+          </div>
+          <div>
+            <input type="radio" name="flavourOptions" id="oreo" value="oreo">
+            <label for="oreo">Oreo Milk Tea</label>
+          </div>
+          <div>
+            <input type="radio" name="flavourOptions" id="strawberry" value="strawberry">
+            <label for="strawberry">Strawberry Black Tea</label>
+          </div>
+        </div>
+
+        <div class="box">
+          <h4>Toppings</h4>
+          <div>
+            <input type="radio" name="toppingOptions" id="pearls" value="pearls" checked>
+            <label for="pearls">Pearls</label>
+          </div>
+          <div>
+            <input type="radio" name="toppingOptions" id="glassJelly" value="glassjelly">
+            <label for="glassJelly">Glass Jelly</label>
+          </div>
+          <div>
+            <input type="radio" name="toppingOptions" id="strawberryPopping" value="strawberrypopping">
+            <label for="strawberryPopping">Strawberry Popping</label>
+          </div>
+          <div>
+            <input type="radio" name="toppingOptions" id="pudding" value="pudding">
+            <label for="pudding">Pudding</label>
+          </div>
+        </div>
+
+        <div class="box">
+          <h4>Sugar Levels</h4>
+          <div>
+            <input type="radio" name="sugarLevels" id="full" value="full" checked>
+            <label for="pearls">100% Sugar</label>
+          </div>
+          <div>
+            <input type="radio" name="sugarLevels" id="seventy" value="seventy">
+            <label for="glassJelly">70% Sugar</label>
+          </div>
+          <div>
+            <input type="radio" name="sugarLevels" id="fifty" value="fifty">
+            <label for="strawberryPopping">50% Sugar</label>
+          </div>
+          <div>
+            <input type="radio" name="sugarLevels" id="thirty" value="thirty">
+            <label for="pudding">30% Sugar</label>
+          </div>
+        </div>
+
+        <button class="btn btn-light-green" type="submit" id="submitBtn">Done</button>
+    </form>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <div class="limit-exceeded" id="limitExceeded">
+    <p class="text-content">Woah there! There are <b class="number" id="number"></b> calories in your boba. Are you sure you want to order this?</p>
+    <button class="btn btn-light-green" type="submit" id="continueBtn">Yes, continue</button>
+    <button class="btn btn-light-green" type="submit" id="backBtn">No, reorder</button>
+  </div>
+
+  <div class="enjoy" id="enjoy">
+    <p class="text-content">Enjoy your bubble tea! :)</p>
+    <img src="images/bbt.png">
+  </div>
+</body>
+</html>
