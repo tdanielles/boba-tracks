@@ -1,7 +1,7 @@
 # Boba Tracks
 > An application created with HTML, CSS, and Javascript that lets you track the amount of calories in your bubble tea drink.
 
-> Won Organizers' Choice at Hydra Hacks 2022 🏆
+> Organizers' Choice at Hydra Hacks 2022 🏆
 
 [Live Demo](https://tdanielles.github.io/boba-tracks/) 👈
 
